@@ -1,5 +1,5 @@
 {
-  "name": "@joywin-digital-framework/core",
+  "name": "@dan-winslow/framework-core",
   "version": "0.0.1",
   "type": "module",
   "description": "A React component library with Accordion, Alert, Card, Carousel, Modal, and more",

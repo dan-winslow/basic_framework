@@ -1,15 +1,15 @@
-# @joywin-digital-framework/core
+# @dan-winslow/framework-core
 
 A React component library with Accordion, Alert, Card, Carousel, Drawer, Dropdown, Modal, Navbar, Tabs, and more.
 
 ## Installation
 
 ```bash
-npm install @joywin-digital-framework/core
+npm install @dan-winslow/framework-core
 # or
-pnpm add @joywin-digital-framework/core
+pnpm add @dan-winslow/framework-core
 # or
-yarn add @joywin-digital-framework/core
+yarn add @dan-winslow/framework-core
 ```
 
 ## Setup
@@ -17,7 +17,7 @@ yarn add @joywin-digital-framework/core
 Import the styles in your app's entry point:
 
 ```tsx
-import '@joywin-digital-framework/core/styles'
+import '@dan-winslow/framework-core/styles'
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ import '@joywin-digital-framework/core/styles'
 ### Card
 
 ```tsx
-import { Card } from '@joywin-digital-framework/core'
+import { Card } from '@dan-winslow/framework-core'
 ;<Card
   cardTitle='Welcome'
   cardDescription='A simple card component'
@@ -37,7 +37,7 @@ import { Card } from '@joywin-digital-framework/core'
 ### Modal
 
 ```tsx
-import { Modal } from '@joywin-digital-framework/core'
+import { Modal } from '@dan-winslow/framework-core'
 import { useState } from 'react'
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
 ### Accordion
 
 ```tsx
-import { Accordion } from '@joywin-digital-framework/core'
+import { Accordion } from '@dan-winslow/framework-core'
 
 const items = [
   { id: '1', title: 'Section 1', content: <p>Content for section 1</p> },
@@ -76,7 +76,7 @@ const items = [
 ### Carousel
 
 ```tsx
-import { Carousel } from '@joywin-digital-framework/core'
+import { Carousel } from '@dan-winslow/framework-core'
 ;<Carousel slidesPerView={3} gap={16} autoPlay autoPlayInterval={5000}>
   <Carousel.Content>
     <Carousel.Item>Slide 1</Carousel.Item>
@@ -92,7 +92,7 @@ import { Carousel } from '@joywin-digital-framework/core'
 ### Drawer
 
 ```tsx
-import { Drawer } from '@joywin-digital-framework/core'
+import { Drawer } from '@dan-winslow/framework-core'
 import { useState } from 'react'
 
 function App() {
@@ -116,7 +116,7 @@ function App() {
 ### Alert
 
 ```tsx
-import { Alert } from '@joywin-digital-framework/core';
+import { Alert } from '@dan-winslow/framework-core';
 
 <Alert variant="success">Operation completed successfully!</Alert>
 <Alert variant="error">Something went wrong.</Alert>
@@ -127,7 +127,7 @@ import { Alert } from '@joywin-digital-framework/core';
 ### Tabs
 
 ```tsx
-import { Tabs } from '@joywin-digital-framework/core'
+import { Tabs } from '@dan-winslow/framework-core'
 ;<Tabs defaultTab='tab1'>
   <Tabs.List>
     <Tabs.Tab value='tab1'>Tab 1</Tabs.Tab>
