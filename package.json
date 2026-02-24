@@ -1,32 +1,55 @@
 {
-  "name": "@framework/core",
-  "private": true,
+  "name": "@joywin-digital-framework/core",
   "version": "0.0.1",
   "type": "module",
+  "description": "A React component library with Accordion, Alert, Card, Carousel, Modal, and more",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles": "./dist/core.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "build": "vite build",
-    "dev": "vite --host"
+    "build:lib": "vite build --mode lib && tsc --project tsconfig.build.json",
+    "dev": "vite --host",
+    "prepublishOnly": "pnpm run build:lib"
   },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "framework",
+    "carousel",
+    "modal",
+    "accordion"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.0.9",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "4.7.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "typescript": "^5.2.2",
-    "vite": "^6.4.1"
+    "vite": "^6.4.1",
+    "vite-plugin-dts": "^4.0.0",
+    "@vitejs/plugin-react": "4.7.0"
   },
   "peerDependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "pnpm": {
     "overrides": {

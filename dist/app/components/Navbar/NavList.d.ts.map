@@ -1,0 +1,1 @@
+{"version":3,"file":"NavList.d.ts","sourceRoot":"","sources":["../../../../src/app/components/Navbar/NavList.tsx"],"names":[],"mappings":"AAGA,KAAK,IAAI,GAAG,YAAY,GAAG,SAAS,GAAG,MAAM,CAAC;AAE9C,UAAU,YAAY;IAClB,qCAAqC;IACrC,QAAQ,EAAE,IAAI,EAAE,CAAC;IACjB,gCAAgC;IAChC,WAAW,EAAE,IAAI,CAAC;CACrB;AAED;;GAEG;AACH,QAAA,MAAM,OAAO,GAAI,2BAA2B,YAAY,4CASvD,CAAA;AAED,eAAe,OAAO,CAAC"}
